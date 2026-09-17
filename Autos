@@ -1,0 +1,161 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Galería de Autos</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            color: #222;
+        }
+
+        header {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #ccc;
+        }
+
+        .contenedor {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 50px 20px;
+            flex-wrap: wrap;
+        }
+
+        .auto {
+            background: white;
+            width: 350px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+            transition: transform 0.3s;
+        }
+
+        .auto:hover {
+            transform: translateY(-8px);
+        }
+
+        .auto img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .informacion {
+            padding: 25px;
+        }
+
+        .informacion h2 {
+            margin-bottom: 10px;
+            color: #111;
+        }
+
+        .informacion p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .boton {
+            display: inline-block;
+            background: #111;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        .boton:hover {
+            background: #e63946;
+        }
+
+        footer {
+            text-align: center;
+            background: #111;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🚗 Galería de Autos</h1>
+        <p>Conoce nuestros modelos favoritos</p>
+    </header>
+
+    <main class="contenedor">
+
+        <!-- AUTO 1 -->
+        <div class="auto">
+
+            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7"
+                 alt="Auto deportivo">
+
+            <div class="informacion">
+                <h2>Auto Deportivo</h2>
+
+                <p>
+                    Un vehículo moderno, elegante y potente,
+                    diseñado para disfrutar de una gran experiencia
+                    de conducción.
+                </p>
+
+                <a href="#" class="boton">Ver más</a>
+            </div>
+
+        </div>
+
+        <!-- AUTO 2 -->
+        <div class="auto">
+
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70"
+                 alt="Auto deportivo rojo">
+
+            <div class="informacion">
+                <h2>Auto Premium</h2>
+
+                <p>
+                    Diseño elegante, tecnología moderna y excelente
+                    rendimiento para quienes buscan comodidad y estilo.
+                </p>
+
+                <a href="#" class="boton">Ver más</a>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Galería de Autos | Proyecto HTML</p>
+    </footer>
+
+</body>
+</html>
+```
